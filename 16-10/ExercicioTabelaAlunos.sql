@@ -179,10 +179,10 @@ ORDER BY t.Tipo;
   por nome.
  -------------------------------------------------------------*/
  SELECT 
+ t.Tipo,
  a.Aluno, 
  a.RM, 
- a.DataNascimento, 
- t.Tipo
+ a.DataNascimento
 FROM Ex05_tbalunos a INNER JOIN Ex05_tbtipoaluno t ON a.IdTipo = t.IdTipo
 ORDER BY t.Tipo DESC, a.Aluno ASC;
 
